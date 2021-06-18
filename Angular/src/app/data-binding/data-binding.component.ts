@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-binding.component.css']
 })
 export class DataBindingComponent implements OnInit {
-
+   
+  serverId : number = 1;
+  serverStatus :string = "offline";
   constructor() { }
 
   ngOnInit(): void {
