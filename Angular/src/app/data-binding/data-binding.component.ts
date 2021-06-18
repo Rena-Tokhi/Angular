@@ -9,7 +9,13 @@ export class DataBindingComponent implements OnInit {
    
   serverId : number = 1;
   serverStatus :string = "offline";
-  constructor() { }
+
+  allowNewServer  = false;
+  constructor() { 
+    setTimeout(() => {
+      this.allowNewServer=true;
+    }, 2000);
+  }
 
   ngOnInit(): void {
   }
