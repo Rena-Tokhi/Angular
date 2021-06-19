@@ -13,3 +13,10 @@
 <button class="btn btn-info" [disabled] = "!allowNewServer" (click)="onCreatServer()"> Add Server </button>
 <p> disabled is {{allowNewServer}} --- interpolation</p>
 <p> {{serverCreationStatus}} </p>
+
+<hr>
+<h3>Passing and Using Data with Event Binding</h3>
+<label>Server Name  : </label>
+<input type="text" class="form-control"
+(input)="onUpdateServerName($event)">
+<p>{{serverName}} </p>

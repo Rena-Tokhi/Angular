@@ -10,7 +10,7 @@ export class DataBindingComponent implements OnInit {
   serverId : number = 1;
   serverStatus :string = "offline";
   serverCreationStatus = "No server was created !"
-
+  serverName='';
   allowNewServer  = false;
   constructor() { 
     setTimeout(() => {
@@ -23,4 +23,7 @@ export class DataBindingComponent implements OnInit {
 onCreatServer(){
   this.serverCreationStatus = "server was Created "
 }
+onUpdateServerName(event :Event ){
+this.serverName = (<HTMLInputElement>event.target).value;
+} 
 }
