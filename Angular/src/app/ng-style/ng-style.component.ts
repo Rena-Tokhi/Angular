@@ -3,7 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-ng-style',
   templateUrl: './ng-style.component.html',
-  styleUrls: ['./ng-style.component.css']
+  styles: [`
+  .online {
+    color :white;
+  }
+  `]
 })
 export class NgStyleComponent implements OnInit {
  serverId :number = 3;
