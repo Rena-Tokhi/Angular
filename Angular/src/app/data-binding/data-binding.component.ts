@@ -13,6 +13,7 @@ export class DataBindingComponent implements OnInit {
   serverCreationStatus = "No server was created !"
   serverName='testName';
   allowNewServer  = false;
+  serverCreated =false
   constructor() { 
     setTimeout(() => {
       this.allowNewServer=true;
@@ -22,7 +23,8 @@ export class DataBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 onCreatServer(){
-  this.serverCreationStatus = "server was Created "
+  this.serverCreated =true;
+  this.serverCreationStatus = "server was Created ! Name is :" + this.serverName;
 }
 onUpdateServerName(event :Event ){
 this.serverName = (<HTMLInputElement>event.target).value;
