@@ -5,3 +5,11 @@
 <hr>
 <h3>Property binding</h3>
 <button class="btn btn-info" [disabled] = "!allowNewServer"> Add Server </button>
+<p> disabled is {{allowNewServer}} --- interpolation</p>
+<span [innerText] ="allowNewServer"> </span> <span> --- Property binding<span>
+
+<hr>
+<h3>Event binding</h3>
+<button class="btn btn-info" [disabled] = "!allowNewServer" (click)="onCreatServer()"> Add Server </button>
+<p> disabled is {{allowNewServer}} --- interpolation</p>
+<p> {{serverCreationStatus}} </p>

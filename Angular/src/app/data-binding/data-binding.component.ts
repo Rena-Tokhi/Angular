@@ -9,6 +9,7 @@ export class DataBindingComponent implements OnInit {
    
   serverId : number = 1;
   serverStatus :string = "offline";
+  serverCreationStatus = "No server was created !"
 
   allowNewServer  = false;
   constructor() { 
@@ -19,5 +20,7 @@ export class DataBindingComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+onCreatServer(){
+  this.serverCreationStatus = "server was Created "
+}
 }
