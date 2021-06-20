@@ -9,6 +9,6 @@ To make your document look professionally produced, You can collapse parts of th
 <br>
 <p *ngIf="showP">Video provides a powerful way to help you prove your point, You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
 </p>
-<div *ngFor="let logItem of log" 
-[ngStyle] ="{backgroundColor : logItem >= 5 ? 'blue' : 'transparent'} "
-[ngClass] ="{'white-text' : logItem >= 5}"> {{ logItem }}</div>
+<div *ngFor="let logItem of log; let i = index" 
+[ngStyle] ="{backgroundColor : i >= 4 ? 'blue' : 'transparent'} "
+[ngClass] ="{'white-text' : i >= i}"> {{ logItem }}</div>

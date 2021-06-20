@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AssignmentComponent implements OnInit {
  showP1 = false;
  showP = false;
-   log : number[] = [];
+   log :any[] = [];
  
   constructor() { }
 
@@ -19,7 +19,9 @@ export class AssignmentComponent implements OnInit {
   }
   onToggle(){
     this.showP = !this.showP;
-    this.log.push(this.log.length + 1);
+    // this.log.push(this.log.length + 1);
+    this.log.push(new Date());
+
 
   }
 
