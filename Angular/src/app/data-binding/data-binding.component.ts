@@ -14,6 +14,7 @@ export class DataBindingComponent implements OnInit {
   serverName='testName';
   allowNewServer  = false;
   serverCreated =false
+  servers = ['TestServer' , 'TestServer 2'];
   constructor() { 
     setTimeout(() => {
       this.allowNewServer=true;
@@ -24,6 +25,7 @@ export class DataBindingComponent implements OnInit {
   }
 onCreatServer(){
   this.serverCreated =true;
+  this.servers.push(this.serverName);
   this.serverCreationStatus = "server was Created ! Name is :" + this.serverName;
 }
 onUpdateServerName(event :Event ){
