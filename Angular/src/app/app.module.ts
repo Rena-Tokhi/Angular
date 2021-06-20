@@ -7,6 +7,7 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { AssignmentComponent } from './assignment/assignment.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     ServersComponent,
     DataBindingComponent,
     NgStyleComponent,
+    AssignmentComponent,
     
   ],
   imports: [
