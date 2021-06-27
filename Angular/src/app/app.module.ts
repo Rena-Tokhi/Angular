@@ -10,6 +10,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
