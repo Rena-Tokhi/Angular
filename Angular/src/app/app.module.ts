@@ -8,6 +8,8 @@ import { ServersComponent } from './servers/servers.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { AssignmentComponent } from './assignment/assignment.component';
+import { CommonModule } from "@angular/common";
+
 
 
 
@@ -23,7 +25,9 @@ import { AssignmentComponent } from './assignment/assignment.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    CommonModule
+
    
   ],
   providers: [],

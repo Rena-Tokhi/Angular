@@ -1,7 +1,4 @@
-
 import { Component } from '@angular/core';
-import * as CryptoJS from 'crypto-js';
-
 
 @Component({
   selector: 'app-root',
@@ -9,10 +6,7 @@ import * as CryptoJS from 'crypto-js';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  title = 'Angular';
-  name = "Tokhi";
-  serverElements :any[] = [];
+  serverElements = [];
   newServerName = '';
   newServerContent = '';
 
@@ -31,8 +25,4 @@ export class AppComponent {
       content: this.newServerContent
     });
   }
-
-
 }
-
-
