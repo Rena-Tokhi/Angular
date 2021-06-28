@@ -9,6 +9,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { CommonModule } from "@angular/common";
+import { CokpitComponent } from './cokpit/cokpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 
 
@@ -21,6 +23,8 @@ import { CommonModule } from "@angular/common";
     DataBindingComponent,
     NgStyleComponent,
     AssignmentComponent,
+    CokpitComponent,
+    ServerElementComponent,
     
   ],
   imports: [
