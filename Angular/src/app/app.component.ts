@@ -1,6 +1,6 @@
 
 import { Component } from '@angular/core';
-import * as CryptoJS from 'crypto-js';
+
 
 
 @Component({
@@ -11,11 +11,6 @@ import * as CryptoJS from 'crypto-js';
 export class AppComponent {
 
   title = 'Angular';
-  name = "Tokhi";
-  serverElements :any[] = [];
- 
-
-
 
 }
 
