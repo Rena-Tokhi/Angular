@@ -10,9 +10,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'Angular';
-  serverElements : any []= [];
-  newServerName = '';
-  newServerContent = '';
+  serverElements : any []= [{type :'server' , name :'TestServer', content :''}];
+ 
 
 
 
